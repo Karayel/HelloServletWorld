@@ -27,7 +27,7 @@ public class ServletLifeCycle extends HttpServlet {
 
 		pw.print("<html><body> <h1>" + msg + "</h1>");
 		pw.print("<p>today:" + today + "<p>");
-		pw.print("<a href=	http://www.injavawetrust.com/>injavawetrust </a>");
+		pw.print("<a href=	https://github.com/Karayel </a>");
 		pw.print("</body></html>");
 	}
 
