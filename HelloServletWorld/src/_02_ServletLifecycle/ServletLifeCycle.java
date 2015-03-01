@@ -14,8 +14,7 @@ public class ServletLifeCycle extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		System.out.println("Hello init() method");
-		System.out
-				.println("init() metodu ServletLifecyle boyunca bir kez calisir.");
+		System.out.println("init() metodu ServletLifecyle boyunca bir kez calisir.");
 	}
 
 	@Override
