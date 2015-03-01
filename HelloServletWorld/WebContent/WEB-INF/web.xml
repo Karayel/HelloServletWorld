@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 	<display-name>HelloServletWorld</display-name>
-	
+	<!-- HelloServletWorld -->
 	<servlet>
 		<servlet-name>HelloServletWorld</servlet-name>
 		<servlet-class>_01_HelloServletWorld.HelloServletWorld</servlet-class>
@@ -14,7 +14,8 @@
 		<servlet-name>HelloServletWorld</servlet-name>
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
-	
+
+	<!-- ServletLifeCycle -->
 	<servlet>
 		<servlet-name>ServletLifeCycle</servlet-name>
 		<servlet-class>_02_ServletLifecycle.ServletLifeCycle</servlet-class>
@@ -24,6 +25,69 @@
 		<servlet-name>ServletLifeCycle</servlet-name>
 		<url-pattern>/servletlifecycle</url-pattern>
 	</servlet-mapping>
-	
-	
+
+	<!-- HelloServletConfig -->
+	<servlet>
+		<servlet-name>HelloServletConfig</servlet-name>
+		<servlet-class>_03_ServletConfig.HelloServletConfig</servlet-class>
+
+		<init-param>
+			<param-name>driverClassName</param-name>
+			<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>mert</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>123456789</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HelloServletConfig</servlet-name>
+		<url-pattern>/helloservletconfig</url-pattern>
+	</servlet-mapping>
+
+	<!-- HelloServletContext -->
+	<servlet>
+		<servlet-name>HelloServletContext</servlet-name>
+		<servlet-class>_04_ServletContext.HelloServletContext</servlet-class>
+
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Mert</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>lastname</param-name>
+			<param-value>Karayel</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HelloServletContext</servlet-name>
+		<url-pattern>/helloservletcontext</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>email</param-name>
+		<param-value>mertkarayel94@hotmail.com</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>address</param-name>
+		<param-value>Sile</param-value>
+	</context-param>
+
+
 </web-app>
