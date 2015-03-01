@@ -4,6 +4,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 	<display-name>HelloServletWorld</display-name>
+	
 	<servlet>
 		<servlet-name>HelloServletWorld</servlet-name>
 		<servlet-class>_01_HelloServletWorld.HelloServletWorld</servlet-class>
@@ -12,6 +13,16 @@
 	<servlet-mapping>
 		<servlet-name>HelloServletWorld</servlet-name>
 		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletLifeCycle</servlet-name>
+		<servlet-class>_02_ServletLifecycle.ServletLifeCycle</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletLifeCycle</servlet-name>
+		<url-pattern>/servletlifecycle</url-pattern>
 	</servlet-mapping>
 	
 	
