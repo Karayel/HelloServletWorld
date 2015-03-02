@@ -33,16 +33,16 @@ public class HelloServletContext extends HttpServlet {
 		pw.write(address + "<br>");
 		pw.write("</html></body>");
 
-		System.out.println("Servlet Context Inï¿½t Parameters Name");
-		Enumeration<String> contextInitParam = context.getInitParameterNames();
-		while (contextInitParam.hasMoreElements()) {
-			System.out.println(contextInitParam.nextElement());
+		System.out.println("Servlet Context Inýt Parameters Name");
+		Enumeration<String> contextInýtParam = context.getInitParameterNames();
+		while (contextInýtParam.hasMoreElements()) {
+			System.out.println(contextInýtParam.nextElement());
 		}
 
-		System.out.println("Servlet Config Inï¿½t Parameters Name");
-		Enumeration<String> servletconfigIniParam = config.getInitParameterNames();
-		while (servletconfigIniParam.hasMoreElements()) {
-			System.out.println(servletconfigIniParam.nextElement());
+		System.out.println("Servlet Config Inýt Parameters Name");
+		Enumeration<String> servletconfigInýtParam = config.getInitParameterNames();
+		while (servletconfigInýtParam.hasMoreElements()) {
+			System.out.println(servletconfigInýtParam.nextElement());
 		}
 	}
 }
