@@ -14,7 +14,13 @@ public class ResponseCookieMethods extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		
 		Cookie userName = new Cookie("username", "Mert");
+		userName.setMaxAge(5); // 5 saniye time out suresi
+		// bu servlet bir kere cagirdiktan sonra ResponseCookieTimeoutCheck
+		// servlet ini calistiralim.
+		
+		// Cookilere goz attigimizda 5 saniye sonra userName cookiesi silinecektir.
 		Cookie passwordCookie = new Cookie("password", "123456");
         //addHeader() metoduyla da Cookie olusturabiliriz. Bunun icin name degeri Set Cookie olmalidir.
 		resp.setHeader("Set-Cookie", "testName=testValue");
