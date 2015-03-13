@@ -31,7 +31,6 @@ public class ResponseExcelDownload extends HttpServlet {
 		while ((read = is.read(bytes)) != -1) {
 			sos.write(bytes, 0, read);
 		}
-
 		// resp.getWriter();
 		// getOutputStream metodunu ve getWriter metodunu ayni anda
 		// kullanamayiz.
