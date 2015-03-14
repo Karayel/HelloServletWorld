@@ -16,9 +16,9 @@ public class ResponseExcelDownload extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		resp.setContentType("application/ms-excel");
-		resp.setHeader("Content-Disposition", "attachment; filename=test.xls");
+		resp.setHeader("Content-Disposition", "attachment; filename=BursluÖgrenciProgramlari.xlsx");
 
-		InputStream is = getServletContext().getResourceAsStream("download.xls");
+		InputStream is = getServletContext().getResourceAsStream("/Burslu Öðrenci Programlarý.xlsx");
 		// getResourceAsStream metodu ile projemizdeki static source/kaynaklara
 		// ulasabiliriz.
 		// WebContent dizinini relative adress olarak alir. download.xlsx
